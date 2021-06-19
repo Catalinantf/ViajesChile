@@ -18,9 +18,9 @@
    <title>Viajes Chile</title>
 </head>
 
-<body>
+<body class="bg-info">
    <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark backdrop-filter: blur(1px); container-fluid fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark container-fluid fixed-top">
       <div class="container">
          <a class="navbar-brand" href="#">
             <img src="assets/img/viajes.svg" alt="Logo ViajesChile" width="30" height="24"
@@ -74,15 +74,17 @@
       </button>
    </div>
    <!-- Cards quienes somos -->
-   <section class="bg-dark p-5">
-      <h2 class="text-white text-center">Quiénes somos</h2>
-      <hr class="text-info">
+   <section class="bg-dark p-5" id="qsomos">
+      <h2 class="text-white text-center pt-3">Quiénes somos</h2>
+      <hr size="5px" class="text-info">
 
-      <div class="row bg-dark" id="qsomos">
+      <div class="row bg-dark">
          <div class="col-sm-4">
             <div class="card border-dark bg-dark">
                <div class="card-body align-middle">
-                  <a href="#" class="btn btn-info d-block text-white"><i class="fa-solid fa-plane fa-1x"></i></a>
+                  <a href="#" class="btn btn-info d-block text-white">
+                     <i class="fa-solid fa-plane fa-1x"></i>
+                  </a>
                   <p class="card-text text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
                      illo
                      ipsa accusamus debitis id in quod quaerat numquam, itaque, possimus, fugit facilis qui praesentium
@@ -140,10 +142,10 @@
    </section>
 
    <!-- Cards Destacados  -->
-   <section class="bg-dark p-5">
-      <h2 class="text-white text-center">Destacados</h2>
-      <hr class="text-info">
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="destac">
+   <section class="bg-dark p-5" id="destac">
+      <h2 class="text-white text-center pt-3">Destacados</h2>
+      <hr size="5px" class="text-info">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
          <div class="col">
             <div class="card">
                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
@@ -193,9 +195,9 @@
    </section>
 
    <!-- Form -->
-   <div class="bg-dark container-fluid p-3">
-      <h2 class="text-white text-center" id="contact"> Contacto</h2>
-      <hr class="text-info">
+   <div class="bg-dark container-fluid p-3" id="contact">
+      <h2 class="text-white text-center"> Contacto</h2>
+      <hr size="5px" class="text-info">
 
       <div class="typeform-widget container"
          data-url="https://form.typeform.com/to/RBItkkDh?typeform-medium=embed-snippet"
@@ -204,58 +206,59 @@
    </div>
 
    <!-- Footer -->
-   <footer class="bg-info container-fluid p-3">
+   <footer class="bg-info container-fluid">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-4">
-               <h2 class="text-uppercase row-col-6 d-inline-block text-white"> Viajes Chile</h2>
+            <div class="col-4 d-flex">
+               <h2 class="text-uppercase row-col-6 text-white"> Viajes Chile</h2>
             </div>
-            <div class="col-8">
+            <div class="col-4 ms-auto d-flex">
                <div class="container px-4">
                   <div class="row gx-5">
-                     <div class="col-2">
+                     <div class="col-1">
                         <div class="p-auto "><a href="https://github.com"><i class=" text-white fab fa-github-square
                         fa-2x"></i></a></div>
                      </div>
-                     <div class="col-2">
+                     <div class="col-1">
                         <div class="p-auto"><a href="https://www.linkedin.com"><i class="text-white fab fa-linkedin
                         fa-2x"></i></a></div>
                      </div>
-                      <div class="col-2">
+                     <div class="col-1">
                         <div class="p-auto"><a href="https://twitter.com"><i class="text-white fab fa-twitter-square
                         fa-2x"></i></a></div>
                      </div>
-                     <div class="col-2">
-                        <div class="p-auto"><a href="https://facebook.com"><i class="text-white fab fa-facebook-square
-                        fa-2x"></i></a></div>
+                     <div class="col-1">
+                        <div><a href="https://facebook.com"><i class="text-white p-auto fab fa-facebook-square
+                        fa-2x"></i></a>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-
-
-      </div>
-      </div>
-      </div>
-
    </footer>
 
 
    <!-- Mi archivo JavaScript -->
    <script src="assets/js/main.js"></script>
    ​
-   <!--jQuery 3.5.1-->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrC XaRkfj"
-      crossorigin="anonymous"></script>
-   ​
    <!--Popper JS 1.16.1-->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
    ​
    <!--Bootstrap JS 4.5.3-->
    <script src="assets/css/bootstrap.min.css"></script>
+   <script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+         if (window.pageYOffset > 800) {
+            nav.classList.add('bg-info').add('slow');
+         } else {
+            nav.classList.remove('bg-info');
+         }
+      });
+   </script>
 
 </body>
 
