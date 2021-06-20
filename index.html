@@ -81,8 +81,9 @@
          <div class="col-sm-4">
             <div class="card border-dark bg-dark">
                <div class="card-body align-middle">
-                  <a href="#" class="btn btn-info d-block text-white">
-                     <i class="fas fa-plane fa-2x" data-bs-toggle="tooltip" data-bs-placement="right" title="Lorem ipsum, dolor sit"></i></a>
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="right"
+                  title="Lorem ipsum, dolor sit" class="btn btn-info d-block text-white">
+                     <i class="fas fa-plane fa-2x"></i></a>
 
                   <p class="card-text text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
                      illo
@@ -111,14 +112,17 @@
                      culpa
                      quis molestias autem optio labore, vel aperiam. Repellendus alias repellat quibusdam vitae ipsam ex
                      iure nam.</p>
-                  <a href="#" class="btn btn-info d-block text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lorem ipsum dolor elit."><i class="fas fa-mountain fa-2x"></i></a>
+                  <a href="" class="btn btn-info d-block text-white" data-bs-toggle="tooltip"
+                     data-bs-placement="bottom" title="Lorem ipsum dolor elit."><i
+                        class="fas fa-mountain fa-2x"></i></a>
                </div>
             </div>
          </div>
          <div class="col-sm-4">
             <div class="card border-dark bg-dark">
                <div class="card-body">
-                  <a href="#" class="btn btn-info d-block text-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Voluptatibus
+                  <a href="" class="btn btn-info d-block text-white" data-bs-toggle="tooltip" data-bs-placement="left"
+                     title="Voluptatibus
                   voluptas impedit."><i class="fas fa-route fa-2x "></i></a>
                   <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
                      minima
@@ -150,7 +154,26 @@
             <div class="col">
                <div class="card h-100">
                   <div class="card-body p-0 bg-info">
-                     <img src="assets/img/card1.jpg" class="card-img-top pb-3" alt="lugar 1">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/img/card1.jpg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí para agrandar la imagen" class="card-img-top pb-3" alt="lugar 1"></a>
+
+                     <!-- Modal 1 -->
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                           <div class="modal-content">
+
+                              <div class="modal-body">
+                                 <img src="assets/img/card1.jpg" class="img-fluid" alt="card 1">
+                              </div>
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h5>
+                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Fin Modal -->
                      <h5 class="card-title text-white fw-bold p-3">Lorem ipsum dolor sit amet.</h5>
                      <p class="card-text text-white p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
                         minima
@@ -162,7 +185,27 @@
             <div class="col">
                <div class="card h-100">
                   <div class="card-body p-0 bg-info">
-                     <img src="assets/img/card2.jpg" class="card-img-top pb-3" alt="lugar 2">
+                     <a href="" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <img src="assets/img/card2.jpg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí para agrandar la imagen" class="card-img-top pb-3" alt="lugar 2"></a>
+                     <!-- Modal 2 -->
+                     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                           <div class="modal-content">
+
+                              <div class="modal-body">
+                                 <img src="assets/img/card2.jpg" class="img-fluid" alt="card 2">
+                              </div>
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit.</h5>
+                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Fin Modal -->
                      <h5 class="card-title text-white fw-bold p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit.
                      </h5>
@@ -178,7 +221,25 @@
             <div class="col">
                <div class="card h-100">
                   <div class="card-body p-0 bg-info">
-                     <img src="assets/img/card3.jpg" class="card-img-top pb-3" alt="lugar 3">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <img src="assets/img/card3.jpg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí para agrandar la imagen" class="card-img-top pb-3" alt="lugar 3"></a>
+                     <!-- Modal 3 -->
+                     <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                           <div class="modal-content">
+
+                              <div class="modal-body">
+                                 <img src="assets/img/card3.jpg" class="img-fluid" alt="card 3">
+                              </div>
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor section Culpa.</h5>
+                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Fin Modal -->
                      <h5 class="card-title text-white fw-bold p-3">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.
                         Culpa.
@@ -193,7 +254,25 @@
             <div class="col">
                <div class="card h-100">
                   <div class="card-body p-0 bg-info">
-                     <img src="assets/img/card4.jpg" class="card-img-top pb-3" alt="lugar 4">
+                     <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        <img src="assets/img/card4.jpg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí para agrandar la imagen" class="card-img-top pb-3" alt="lugar 4"></a>
+                     <!-- Modal 4 -->
+                     <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                           <div class="modal-content">
+
+                              <div class="modal-body">
+                                 <img src="assets/img/card4.jpg" class="img-fluid" alt="card 4">
+                              </div>
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit.</h5>
+                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Fin Modal -->
                      <h5 class="card-title text-white fw-bold p-3">Lorem ipsum dolor sit.</h5>
                      <p class="card-text text-white p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Deserunt
@@ -268,10 +347,11 @@
    <!--Bootstrap JS 5.0.1 local-->
    <script src="assets/css/bootstrap.min.css"></script>
    <script>
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-</script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+         return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+   </script>
 </body>
+
 </html>
