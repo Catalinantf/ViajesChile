@@ -82,8 +82,8 @@
             <div class="card border-dark bg-dark">
                <div class="card-body align-middle">
                   <a href="#" class="btn btn-info d-block text-white">
-                     <i class="fas fa-plane fa-2x"></i>
-                  </a>
+                     <i class="fas fa-plane fa-2x" data-bs-toggle="tooltip" data-bs-placement="right" title="Lorem ipsum, dolor sit"></i></a>
+
                   <p class="card-text text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
                      illo
                      ipsa accusamus debitis id in quod quaerat numquam, itaque, possimus, fugit facilis qui praesentium
@@ -111,14 +111,15 @@
                      culpa
                      quis molestias autem optio labore, vel aperiam. Repellendus alias repellat quibusdam vitae ipsam ex
                      iure nam.</p>
-                  <a href="#" class="btn btn-info d-block text-white"><i class="fas fa-mountain fa-2x"></i></a>
+                  <a href="#" class="btn btn-info d-block text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lorem ipsum dolor elit."><i class="fas fa-mountain fa-2x"></i></a>
                </div>
             </div>
          </div>
          <div class="col-sm-4">
             <div class="card border-dark bg-dark">
                <div class="card-body">
-                  <a href="#" class="btn btn-info d-block text-white"><i class="fas fa-route fa-2x"></i></a>
+                  <a href="#" class="btn btn-info d-block text-white" data-bs-toggle="tooltip" data-bs-placement="left" title="Voluptatibus
+                  voluptas impedit."><i class="fas fa-route fa-2x "></i></a>
                   <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
                      minima
                      culpa,
@@ -264,20 +265,13 @@
    <!--Popper JS 1.16.1-->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
    ​
-   <!--Bootstrap JS 4.5.3-->
+   <!--Bootstrap JS 5.0.1 local-->
    <script src="assets/css/bootstrap.min.css"></script>
    <script>
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-         if (window.pageYOffset > 800) {
-            nav.classList.add('bg-dark').add('slow');
-         } else {
-            nav.classList.remove('bg-dark');
-         }
-      });
-   </script>
-
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
 </body>
-
 </html>
